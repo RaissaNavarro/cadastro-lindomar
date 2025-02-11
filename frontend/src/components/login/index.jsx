@@ -16,7 +16,7 @@ export default function Login(){
             const response = await axios.post('http://127.0.0.1:8000/api/token/',
                 {
                     username: user,
-                    "password": "1234"
+                    password: password
                 }
             )
             console.log("Token Login", response.data.access)
